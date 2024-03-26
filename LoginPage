@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+    body{
+        font-family : Arial;
+        margin : 0px;
+        padding : 0px;
+
+    }
+
+    .outer{
+        height :747px;
+        width : 100%;
+        border : 2px solid black;
+        background-image: url({{url_for('static',filename='img.jpg')}});
+        background-size : cover;
+        display : flex;
+        justify-content: center;
+        align-items : center;
+    }
+
+
+    .inner{
+        height : 350px;
+        width : 400px;
+        border : 2px solid;
+        border-color :rgba(240, 238, 238,0.4);
+        text-align: center;
+        border-radius : 20px;
+        display : flex;
+        flex-direction : column;
+        justify-content: flex-start;
+        align-items : center;
+        backdrop-filter: blur(15px);
+        background : rgba(255,255,255,0.2);
+        
+    }
+    input.e{
+        background-color: transparent;
+        height : 100%;
+        width : 100%;
+        border:none;
+        border-bottom:2px solid #3D4547;
+        outline :none;
+    }
+    label.n{
+        position : absolute;
+        left : 0px;
+        color : black;
+        pointer-events: none;
+        transition: all 0.3s ease;
+    }
+    .email{
+        height: 25px;
+        width: 315px;
+        padding-top : 25px;
+        position : relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .email:hover{
+        transform: scale(1.1);
+        transition :all 0.3s ease;
+    }
+    .password:hover{
+        transform: scale(1.1);
+        transition :all 0.3s ease;
+    }
+    label.l:hover{
+        transform: scale(1.1);
+        transition :all 0.3s ease;
+        color : white;
+    }
+    .password{
+        height: 25px;
+        width: 315px;
+        padding-top : 35px;
+        position : relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    input.e:hover~label.n,
+    input.e:valid~label.n{
+        transform: translateY(-20px);
+        font-size : 15px;
+        color : white;
+    }
+    input.e:hover{
+        border-bottom : 2px solid white;
+        transition : all 0.5s linear;
+    }
+    h1:hover{
+        color : #A0A7A6;
+        transition : all 0.2s ease;
+
+    }
+
+    i:hover{
+        color : #3D4547;
+        transition : all 0.2s ease;   
+    }
+    i{
+        right:0;
+    }
+    .ln1{
+        color : black;
+        font-weight : bold;
+    }
+    button:hover{
+        border: 2px solid black;
+    }
+    .verify{
+        height: 25px;
+        width: 315px;
+        padding-top : 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    a{
+        text-decoration: none;
+    }
+
+    .last
+    {
+        display : flex;
+        
+    }
+    button{
+        height : 40px;
+        width : 300px;
+        margin-top : 20px;
+        padding-top : 10px;
+        padding-bottom :10px;
+        background-color: white;
+        border : 2px solid white;
+        border-radius : 25px;
+    }
+    a.r{
+    color : black;
+    font-weight: bolder;  
+    }
+    a.fp{
+        color : #3D4547;
+        font-weight: bolder;
+    }
+
+    @media (max-width :600px) and (max-height :700px)
+    {
+        .outer{
+            height :700px;
+            width : 100%;
+            background-image: url("jesse-echevarria--4MIfAsQsS8-unsplash\ \(1\).jpg");
+            background-size : cover;
+            display : flex;
+            justify-content: center;
+            align-items : center;
+        }
+
+        .inner{
+            height : 350px;
+            width : 300px;
+            border : 2px solid;
+            border-color : rgba(255,255,255,0.5);
+            text-align: center;
+            border-radius : 25px;
+            display : flex;
+            flex-direction : column;
+            justify-content: flex-start;
+            align-items : center;
+            backdrop-filter: blur(15px);
+            background : rgba(255,255,255,0.2);
+        }
+        
+        .email{
+            height: 25px;
+            width: 240px;
+            padding-top : 25px;
+        }
+        .password{
+            height: 25px;
+            width: 240px;
+            padding-top : 35px;
+        }
+        .verify{
+            height: 25px;
+            width: 240px;
+            padding-top : 20px;
+            font-size : 0.85rem;
+        }
+        button{
+            height : 40px;
+            width : 240px;
+        
+        }
+        button:focus{
+            border:2px solid black;
+        }
+        input.e:focus~label.n,
+        input.e:valid~label.n{
+        transform: translateY(-20px);
+        font-size : 15px;
+        color : white;
+    }
+    }
+
+
+</style>
+</head>
+<body>
+    <form>
+        <div class="outer">
+            <div class="inner">
+                <h1>Login Here</h1>
+                <!--Email-->
+                <div class ="email">
+                <input  type = "text" required class = "e">
+                <label class="n">Email</label>
+                <i class="fa-regular fa-envelope"></i>
+                </div>
+                <!--password-->
+                <div class ="password">
+                    <input type = "password" required class ="e">
+                    <label class="n">Password</label>
+                    <i class="fa-solid fa-lock"></i>
+                </div> 
+                <!--checkbox-->
+                <div class = "verify">
+                <label class="l">
+                    <input  class = "c" type = "checkbox"> Remember me</input>
+                </label> 
+                <a href={{url_for("forgotpass")}} class="fp"><p>Forgot Password?</p></a>
+                </div> 
+                <!--Login-->
+                <div class="ln">
+                  <button><a href="a" class="ln1">Log In</a></button>
+                </div>
+                <!--last-->
+                <div class="last">
+                <p>Don't have an account?</p><a href={{url_for("register")}} class="r"><p> Register</p></a>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+<script src="first.js"> </script>
+</html>
