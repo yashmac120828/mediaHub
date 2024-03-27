@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Aayu's Media Hub</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <style>
+         body{
+    background-color: black;
+  }
+  .Multimedia
+  {
+        padding : 10px 0px 10px 0px;
+        background-color:#263CA7;
+        text-align: center; 
+        color : #EE6352;
+  }
+  .header
+  {
+        padding : 10px 0px 10px 0px;
+        background-color:#191339;
+        font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+        text-align: center;
+  }
+  .header h1{
+    color : white;
+    font-size: 40px;
+    font-size: Roboto;
+    font-weight: normal;
+    text-align: center;
+  }
+  i{
+    color : white;
+    position: absolute;
+    right:50px;
+    top: 100px;
+  }
+  h3{
+    color : white;
+    position: absolute;
+    right:100px;
+    top: 100px;
+    font-size: large;
+  }
+.row{
+    display: flex;
+    background-color:#5D0D97;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 200px;
+    align-items: center;
+}
+.column{
+    text-align: center;
+    margin-left: 10px;
+    margin: 5px;
+    float: left;
+    width: 90px;
+    height: 100px;
+}
+.column a{
+  text-decoration: none;
+  color : black;
+  font-size: large;
+}
+.column:hover{
+border: 2px solid #ccc;
+transition-property: all;
+transition: ease-in .2s linear all 1s;
+border-radius: 20px;
+}
+input{
+top:100px;
+}
+.ruler{
+  height: 3px;
+  width: 100%;
+  background-color:#EE6352;
+}
+.faq{
+  height: 500px;
+  background-color:rgb(33, 33, 145);
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+  align-content: center;
+}
+.faq1{
+  height: 53%;
+  width: 100%;
+  background-color: #08B2E3;
+  position:absolute;
+  margin-top:80px;
+}
+.faq h2{
+  color:#484D6D;
+  margin-top: 20px;
+  
+}
+.q1{
+  height:100px;
+  background-color:#57A773;
+  width:100%;
+}
+p{
+  margin-left:10px;
+  font-size: large;
+}
+.vid1{
+  height:100%;
+  width:500% ;
+  object-fit:cover;
+}
+.vid2{
+  height:100%;
+  width:500%;
+  object-fit: fill;
+}
+.vid3{
+  height:100%;
+  width:500%;
+  object-fit:inherit;
+}
+
+.h5{
+    text-align: center;
+    padding: 10%;
+}
+#log1{
+ color: black;
+background-color: aqua;
+}
+#boon{
+border-radius: 15px;
+margin-top: 10px;
+object-fit: cover;
+margin-left: 30%;
+}
+blockquote{
+margin-top: 10px;
+min-height: 5em;
+padding: 1em 4em;
+font: 1em/150% sans-serif;
+position: relative;
+background-color: lightgoldenrodyellow;
+}
+
+blockquote::before,
+blockquote::after {
+position: absolute;
+height: 3rem;
+font:
+6rem/100% Georgia,
+"Times New Roman",
+Times,
+serif;
+}
+
+blockquote::before {
+content: "“";
+top: 0.3rem;
+left: 0.9rem;
+}
+
+blockquote::after {
+content: "”";
+bottom: 0.3rem;
+right: 0.8rem;
+}
+
+blockquote:lang(fr)::before {
+content: "«";
+top: -1.5rem;
+left: 0.5rem;
+}
+
+blockquote:lang(fr)::after {
+content: "»";
+bottom: 2.6rem;
+right: 0.5rem;
+}
+
+blockquote i {
+display: block;
+font-size: 0.8em;
+margin-top: 1rem;
+text-align: right;
+}
+#jogo {
+text-align: center;
+font-family: 'Times New Roman', Times, serif;
+}
+nav {
+background:linear-gradient(120deg,#191339,#5D0D97);
+width: 100%;
+overflow: auto;
+}
+ul {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+li {
+float: left;
+}
+li a:hover
+{
+border:2px solid white;
+border-radius: 20px;
+}
+nav a {
+width: 120px;
+display: block;
+text-decoration: none;
+text-align: center;
+font-size: 17px;
+color: white;
+padding: 20px 10px;
+font-family: Arial, Helvetica, sans-serif;
+}
+.column input {
+width: 50px;
+height: auto;
+}
+.desc {
+color :white;
+padding: 5px;
+text-align: center;
+}
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Aayu's Media Hub</h1>
+        </div>
+        <div class="ruler"></div>
+        <nav>
+          <ul>
+            <li><a href="#"> Home</a></li>
+            <li><a href="#"> Info</a></li>
+            <li><a href="#"> Accounts</a></li>
+            <li><a href="#"> Contact</a></li>
+          </ul>
+          <i class="fa-solid fa-user"></i>
+          <h3>Username</h3>
+        </nav>
+        <div class="ruler"></div>
+        <div class="Multimedia">
+            <h2>Multimedia</h2>
+        </div>
+        <div class="ruler"></div>
+        <div class="row">
+          <div class="column"><a href="https://wynk.in/music">
+              <input type="image" src="music.png" name="submit" alt="submit" height="180px" width="150px" class="img1">
+              <div class="desc"> Music </div>
+            </a>
+          </div>
+          <div class="column"><a href={{url_for("img")}}>
+            <input type="image" src="img2.png" name="submit" alt="submit" height="180px" width="150px" class="img1">
+            <div class="desc"> Pictures </div>
+            </a>
+          </div>
+          <div class="column">
+            <input type="image" src="video.png" name="submit" alt="submit" height="180px" width="150px" class="img1">
+            <div class="desc"> Videos </div>
+          </div>
+          <div class="column">
+            <input type="image" src="notep1.png" name="submit" alt="submit" height="180px" width="150px" class="img1">
+              <div class="desc"> Notepad </div>
+          </div>
+          <div class="column">
+            <input type="image" src="GitHub-Logo.png" name="submit" alt="submit" height="180px" width="150px" class="img1">
+              <div class="desc"> GitHub </div>
+          </div>
+          <div class="column">
+            <input type="image" src="games.jpeg" name="submit" alt="submit" height="180px" width="150px" class="img1">
+              <div class="desc"> Games </div>
+          </div>
+           
+        </div>
+        <div class="ruler"></div>
+        <div class="faq">
+          <video src="chooseus.mp4" autoplay loop muted class="vid1"></video>   
+        </div>
+        <div class="ruler"></div>
+        <div class="faq">
+          <video src="about us.mp4" autoplay loop muted class="vid2"></video>   
+        </div>
+        <div>
+          <marquee id="log1" direction="right"  behavior="alternate">
+              Enjoy the Highlights
+          </marquee>
+       </div>
+       <div class="faq">
+        <video src="contactus.mp4" autoplay loop muted class="vid3"></video>   
+      </div>
+
+    </body>
+</html>
