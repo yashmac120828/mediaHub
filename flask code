@@ -1,0 +1,21 @@
+from flask import Flask, render_template
+app = Flask(__name__,template_folder='template_files')
+@app.route("/")
+def home():
+    return render_template("login.html", name="shopping")
+
+@app.route("/forgotpass")
+def forgotpass():
+    return render_template("t.html", name="forgot password")
+
+@app.route("/register")
+def register():
+    return render_template("register.html", name="register")
+@app.route("/homepage")
+def homepage():
+    return render_template("homepage.html",name="homepage")
+@app.route("/img")
+def img():
+    return render_template("img.html",name='img')
+if __name__ == "__main__":
+    app.run(debug=True)
